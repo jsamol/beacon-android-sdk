@@ -12,13 +12,15 @@ object Version {
 
     const val kotlinSerialization = "1.3.1"
 
-    const val androidxCore = "1.6.0"
+    const val androidxCore = "1.9.0"
     const val androidxAppCompat = "1.3.1"
     const val androidxConstraintLayout = "2.1.0"
 
-    const val androidxActivity = "1.3.1"
-    const val androidxFragment = "1.5.1"
-    const val androidxLifecycle = "2.3.1"
+    const val androidxActivity = "1.6.1"
+    const val androidxFragment = "1.5.4"
+    const val androidxComposeUi = "1.3.1"
+    const val androidxComposeMaterial = "1.3.1"
+    const val androidxLifecycle = "2.5.1"
     const val androidxNavigation = "2.5.1"
 
     const val androidxSecurity = "1.0.0"
@@ -34,8 +36,8 @@ object Version {
 
     const val junit = "4.13.2"
 
-    const val androidxJunit = "1.1.3"
-    const val androidxEspresso = "3.4.0"
+    const val androidxJunit = "1.1.4"
+    const val androidxEspresso = "3.5.0"
 
     const val mockk = "1.12.0"
 
@@ -61,7 +63,12 @@ object Dependencies {
     const val androidxConstraintLayout = "androidx.constraintlayout:constraintlayout:${Version.androidxConstraintLayout}"
 
     const val androidxActivity = "androidx.activity:activity-ktx:${Version.androidxActivity}"
-    const val androidxFragment= "androidx.fragment:fragment-ktx:${Version.androidxFragment}"
+    const val androidxActivityCompose = "androidx.activity:activity-compose:${Version.androidxActivity}"
+    const val androidxFragment = "androidx.fragment:fragment-ktx:${Version.androidxFragment}"
+
+    const val androidxComposeUi = "androidx.compose.ui:ui:${Version.androidxComposeUi}"
+    const val androidxComposeUiToolingPreview = "androidx.compose.ui:ui-tooling-preview:${Version.androidxComposeUi}"
+    const val androidxComposeMaterial = "androidx.compose.material:material:${Version.androidxComposeMaterial}"
 
     const val androidxLifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Version.androidxLifecycle}"
     const val androidxLifecycleLiveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Version.androidxLifecycle}"
@@ -86,6 +93,10 @@ object TestDependencies {
 
     const val androidxJunit = "androidx.test.ext:junit:${Version.androidxJunit}"
     const val androidxEspresso = "androidx.test.espresso:espresso-core:${Version.androidxEspresso}"
+
+    const val androidxComposeUiTestJunit4 = "androidx.compose.ui:ui-test-junit4:${Version.androidxComposeUi}"
+    const val androidxComposeUiTooling = "androidx.compose.ui:ui-tooling:${Version.androidxComposeUi}"
+    const val androidxComposeUiTestManifest = "androidx.compose.ui:ui-test-manifest:${Version.androidxComposeUi}"
 
     const val mockk = "io.mockk:mockk:${Version.mockk}"
 

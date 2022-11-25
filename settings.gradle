@@ -3,10 +3,12 @@ rootProject.name = "Beacon SDK"
 include ':core'
 include ':blockchain-tezos'
 
-include ':demo-old'
 include ':client-wallet'
 include ':client-wallet-compat'
 
 include ':transport-p2p-matrix'
 include ':blockchain-substrate'
 include ':client-dapp'
+
+include ':demo'
+include ':demo-old'
