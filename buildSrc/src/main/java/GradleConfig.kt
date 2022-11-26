@@ -15,17 +15,20 @@ object Version {
     const val androidxCore = "1.9.0"
     const val androidxAppCompat = "1.3.1"
     const val androidxConstraintLayout = "2.1.0"
+    const val androidxConstraintLayoutCompose = "1.0.1"
 
     const val androidxActivity = "1.6.1"
     const val androidxFragment = "1.5.4"
     const val androidxComposeUi = "1.3.1"
     const val androidxComposeMaterial = "1.3.1"
     const val androidxLifecycle = "2.5.1"
-    const val androidxNavigation = "2.5.1"
+    const val androidxNavigation = "2.5.3"
 
     const val androidxSecurity = "1.0.0"
 
     const val coroutines = "1.5.1"
+
+    const val hilt = "2.44"
 
     const val ktor = "1.6.2"
 
@@ -60,7 +63,9 @@ object Dependencies {
     const val androidxCore = "androidx.core:core-ktx:${Version.androidxCore}"
 
     const val androidxAppCompat = "androidx.appcompat:appcompat:${Version.androidxAppCompat}"
+
     const val androidxConstraintLayout = "androidx.constraintlayout:constraintlayout:${Version.androidxConstraintLayout}"
+    const val androidxConstraintLayoutCompose = "androidx.constraintlayout:constraintlayout-compose:${Version.androidxConstraintLayoutCompose}"
 
     const val androidxActivity = "androidx.activity:activity-ktx:${Version.androidxActivity}"
     const val androidxActivityCompose = "androidx.activity:activity-compose:${Version.androidxActivity}"
@@ -76,8 +81,12 @@ object Dependencies {
 
     const val androidxNavigationFragment = "androidx.navigation:navigation-fragment-ktx:${Version.androidxNavigation}"
     const val androidxNavigationUi = "androidx.navigation:navigation-ui-ktx:${Version.androidxNavigation}"
+    const val androidxNavigationCompose = "androidx.navigation:navigation-compose:${Version.androidxNavigation}"
 
     const val androidxSecurity = "androidx.security:security-crypto:${Version.androidxSecurity}"
+
+    const val hilt = "com.google.dagger:hilt-android:${Version.hilt}"
+    const val hiltAndroidCompiler = "com.google.dagger:hilt-android-compiler:${Version.hilt}"
 
     const val materialComponents = "com.google.android.material:material:${Version.materialComponents}"
 

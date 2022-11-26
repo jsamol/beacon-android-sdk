@@ -1,6 +1,8 @@
 plugins {
+    kotlin("kapt")
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -45,6 +47,9 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    kapt {
+       correctErrorTypes = true
+    }
 }
 
 dependencies {
@@ -58,9 +63,16 @@ dependencies {
     implementation(Dependencies.androidxComposeUiToolingPreview)
     implementation(Dependencies.androidxComposeMaterial)
 
+    implementation(Dependencies.androidxConstraintLayoutCompose)
+    implementation(Dependencies.androidxNavigationCompose)
+
     // Lifecycle
     implementation(Dependencies.androidxLifecycleViewModel)
     implementation(Dependencies.androidxLifecycleRuntime)
+
+    // Hilt
+    implementation(Dependencies.hilt)
+    kapt(Dependencies.hiltAndroidCompiler)
 
     // Test
     testImplementation(TestDependencies.junit)

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Beacon SDK Demo</string>
+
+    <!-- Main.BottomNavigation -->
+    <string name="main_bottom_nav_item_title_wallet">Wallet</string>
+    <string name="main_bottom_nav_item_title_dapp">DApp</string>
 </resources>
