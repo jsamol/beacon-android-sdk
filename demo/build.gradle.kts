@@ -1,5 +1,6 @@
 plugins {
     kotlin("kapt")
+    kotlin("plugin.serialization")
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.dagger.hilt.android")
@@ -35,6 +36,7 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+        freeCompilerArgs = freeCompilerArgs + listOf("-Xcontext-receivers")
     }
     buildFeatures {
         compose = true
@@ -73,6 +75,12 @@ dependencies {
     // Hilt
     implementation(Dependencies.hilt)
     kapt(Dependencies.hiltAndroidCompiler)
+
+    // Serialization
+    implementation(Dependencies.kotlinxSerializationJson)
+
+    // Tezos SDK
+    implementation(Dependencies.tezos)
 
     // Test
     testImplementation(TestDependencies.junit)

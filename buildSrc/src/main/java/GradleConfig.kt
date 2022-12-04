@@ -37,6 +37,8 @@ object Version {
 
     const val materialComponents = "1.4.0"
 
+    const val tezos = "0.0.6-beta01"
+
     const val junit = "4.13.2"
 
     const val androidxJunit = "1.1.4"
@@ -92,6 +94,8 @@ object Dependencies {
 
     const val lazySodium = "com.goterl:lazysodium-android:${Version.lazySodium}@aar"
     const val jna = "net.java.dev.jna:jna:${Version.jna}@aar"
+
+    const val tezos = "com.github.airgap-it:tezos-kotlin-sdk:${Version.tezos}"
 }
 
 object TestDependencies {

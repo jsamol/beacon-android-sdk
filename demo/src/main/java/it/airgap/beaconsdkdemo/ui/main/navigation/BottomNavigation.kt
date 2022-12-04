@@ -1,4 +1,4 @@
-package it.airgap.beaconsdkdemo.ui.navigation
+package it.airgap.beaconsdkdemo.ui.main.navigation
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes

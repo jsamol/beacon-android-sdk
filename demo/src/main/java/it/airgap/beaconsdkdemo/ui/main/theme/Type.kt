@@ -1,4 +1,4 @@
-package it.airgap.beaconsdkdemo.ui.theme
+package it.airgap.beaconsdkdemo.ui.main.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
